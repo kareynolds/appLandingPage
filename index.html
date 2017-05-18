@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                position: relative;
+            }
+            
+            a {
+                color: grey;
+            }
+            
+            .jumbotron {
+                background: url(background.jpg);
+                height: 675px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 auto;
+            }
+            
+            #signUpForm {
+                width: 30%;
+                margin: 0 auto;
+            }
+            
+            #myh1 {
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-size: 550%;
+                margin-top: 30px;
+            }
+            
+            hr {
+                color: black;
+                border: 1px solid lightgrey;
+            }
+            
+            #summary {
+                margin: 30px auto;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+            }
+            
+            h4 {
+                color: black;
+                text-align: center;
+                margin: 30px auto;
+            }
+            
+            hr {
+                opacity: 0.8;
+            }
+            
+            #cards {
+                margin-top: 150px;
+            }
+            
+            #cardImage {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                overflow: hidden;
+                max-height: 300px;
+                max-width: 400px;
+            }
+            
+            #firstContainer {
+                margin-bottom: 100px;
+                text-align: center;
+            }
+            
+            #lastContainer {
+                height: 700px;
+                width: 100%;
+                background: #525252;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left, #525252, #3d72b4);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #525252, #3d72b4);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+            
+            #theH2 {
+                margin: 0 auto;
+                text-align: center;
+                padding-top: 100px;
+                font-weight: bold;
+                font-size: 40px;
+            }
+            
+            #myP {
+                margin: 0 auto;
+                text-align: center;
+                padding-top: 50px;
+                font-weight: bold;
+            }
+            
+            #appstore {
+                margin: 0 auto;
+                text-align: center;
+                position: relative;
+                left: 300;
+            }
+            
+            #email {
+                width: 300px;
+            }
+            
+            #appSummary {
+                text-align: center;
+            }
+        </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top" id="navbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#myApp">My App</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#downloadApp">Download the App</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="email" placeholder="Email">
+                    <input class="form-control mr-sm-2" type="password" placeholder="Password">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+                </form>
+            </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <h1 id="myh1"> My Awesome App </h1>
+        <p id="home"> This is why YOU should download my App! </p>
+        <hr class="a-y-2" />
+        <p> Want to know more? Enter your email below! </p>
+        <form class="form-inline" id="signUpForm">
+
+            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <div class="input-group-addon">@</div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+
+    </div>
+
+
+    <div class="container" id="firstContainer">
+
+        <div class="row" id="appSummary">
+
+            <h1 id="summary"> Summary Of Why This App Is Amazing </h1>
+            <h4> Explanation of why it'll make their lives better </h4>
+        </div>
+
+        <div class="card-deck">
+            <div class="card" id="about">
+                <img class="card-img-top" id="cardImage" src="background2.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" id="cardImage"src="background2.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" id="cardImage" src="background2.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
+                        has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="lastContainer">
+        <span id="downloadApp"> </span>
+        <h2 id="theH2"> Download the App! </h2>
+        <p id="myP"> Click the download button to learn more </p>
+        <img src="appstore3.svg" id="appstore">
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+                crossorigin="anonymous"></script>
+
+                <script type="text/javascript">
+                    $('body').scrollspy({ target: '#scrollspy' });
+                </script>
+</body>
+
+</html>
